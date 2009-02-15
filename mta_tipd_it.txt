@@ -1,0 +1,48 @@
+# mta_tipd_it v0.1
+# Implements embedding of Tipd.com's "Tip It" button.
+# Morgan Aldridge
+# http://www.makkintosshu.com/
+
+# ......................................................................
+# This is a plugin for Textpattern - http://textpattern.com/
+# To install: textpattern > admin > plugins
+# Paste the following text into the 'Install plugin' box:
+# ......................................................................
+
+YTo5OntzOjQ6Im5hbWUiO3M6MTE6Im10YV90aXBkX2l0IjtzOjc6InZlcnNpb24iO3M6Mzoi
+MC4xIjtzOjY6ImF1dGhvciI7czoxNToiTW9yZ2FuIEFsZHJpZGdlIjtzOjEwOiJhdXRob3Jf
+dXJpIjtzOjI4OiJodHRwOi8vd3d3Lm1ha2tpbnRvc3NodS5jb20vIjtzOjExOiJkZXNjcmlw
+dGlvbiI7czo1MToiSW1wbGVtZW50cyBlbWJlZGRpbmcgb2YgVGlwZC5jb20ncyAiVGlwIEl0
+IiBidXR0b24uIjtzOjQ6InR5cGUiO2k6MDtzOjQ6ImhlbHAiO3M6MTIyNzoiCTxwPgpUaGlz
+IHBsdWctaW4gaW1wbGVtZW50cyBhIHNpbmdsZSB0YWcgKDxjb2RlPm10YV90aXBkX2l0PC9j
+b2RlPikgd2hpY2ggd2lsbCBlbWJlZCBhIEphdmFTY3JpcHQgJiM4MjIwO1RpcCBJdCYjODIy
+MTsgYnV0dG9uIGluIHlvdXIgYXJ0aWNsZS48L3A+Cgk8aDM+U3ludGF4PC9oMz4KCTxwPlRo
+ZSA8Y29kZT5tdGFfdGlwZF9pdDwvY29kZT4gdGFnIGhhcyB0aGUgZm9sbG93aW5nIHN5bnRh
+Y3RpYyBzdHJ1Y3R1cmU6PC9wPgoJPHA+PGNvZGU+Jmx0O3R4cDptdGFfdGlwZF9pdCAvJmd0
+OzwvY29kZT48L3A+Cgk8aDM+QXR0cmlidXRlczwvaDM+Cgk8cD5UaGUgPGNvZGU+bXRhX3Rp
+cGRfaXQ8L2NvZGU+IHRhZyB3aWxsIGFjY2VwdCB0aGUgZm9sbG93aW5nIGF0dHJpYnV0ZXMg
+KG5vdGU6IGF0dHJpYnV0ZXMgYXJlIDxzdHJvbmc+Y2FzZSBzZW5zaXRpdmU8L3N0cm9uZz4p
+OjwvcD4KCTxwPjxzdHJvbmc+PGNvZGU+dXJsPSJzdHJpbmciPC9jb2RlPjwvc3Ryb25nPjwv
+cD4KCTxwPldoZW4gcGFzc2VkIGEgdXJsIHN0cmluZywgdGhlIFVSTCBvZiB0aGUgYXJ0aWNs
+ZSBzdWJtaXR0ZWQgdG8gdGlwZC5jb20gd2lsbCBiZSBzZXQgdG8gc2FpZCBzdHJpbmcuIFdo
+ZW4gdGhpcyBhdHRyaWJ1dGUgaXMgbm90IHByZXNlbnQgKGRlZmF1bHQpLCB0aGUgY3VycmVu
+dCBhcnRpY2xlJiM4MjE3O3MgcGVybWxpbmsgVVJMIHdpbGwgYmUgdXNlZC48L3A+Cgk8cD48
+c3Ryb25nPjxjb2RlPmJ1dHRvbj0ic3RyaW5nIjwvY29kZT48L3N0cm9uZz48L3A+Cgk8cD5X
+aGVuIHBhc3NlZCBhIHN0cmluZywgdGhlIHR5cGUgb2YgdGhlICYjODIyMDtUaXAgSXQmIzgy
+MjE7IGJ1dHRvbiB3aWxsIGJlIHNldCB0byB0aGF0IG5hbWVkLiBBbiBlbXB0eSBvciB1bnJl
+Y29nbml6ZWQgc3RyaW5nIHdpbGwgcmVzdWx0IGluIHRoZSBiaWcgJiM4MjIwO1RpcCBJdCYj
+ODIyMTsgYnV0dG9uIHdpdGggVGlwJiM4MjE3O2QgY291bnQuIEFjY2VwdGFibGUgdmFsdWVz
+OiA8Y29kZT5iaWc8L2NvZGU+LCA8Y29kZT5zbWFsbDwvY29kZT4sIG9yIDxjb2RlPnRleHQ8
+L2NvZGU+LjwvcD4KCTxoMz5FeGFtcGxlczwvaDM+Cgk8cD48Y29kZT4mbHQ7dHhwOm10YV90
+aXBkX2l0IC8mZ3Q7PC9jb2RlPjwvcD4KCTxwPjxjb2RlPiZsdDt0eHA6bXRhX3RpcGRfaXQg
+c2l6ZT0ic21hbGwiIC8mZ3Q7PC9jb2RlPjwvcD4KCTxoMz5DaGFuZ2UgTG9nPC9oMz4KCTxw
+PnYwLjEgSW5pdGlhbCByZWxlYXNlLjwvcD4KCgogIjtzOjQ6ImNvZGUiO3M6NDM0OiIKCmZ1
+bmN0aW9uIG10YV90aXBkX2l0KCRhdHRzKQp7CglnbG9iYWwgJHRoaXNhcnRpY2xlOwoJJHRp
+cGRfanMgPSAnJzsKCglleHRyYWN0KGxBdHRzKGFycmF5KAoJCSd1cmwnID0+IHBlcm1saW5r
+dXJsKCR0aGlzYXJ0aWNsZSksCgkJJ3NpemUnID0+ICdiaWcnCgkpLCRhdHRzKSk7CgoJJHRp
+cGRfanMgLj0gJzxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Imh0dHA6Ly90
+aXBkLmNvbS9ldmJzLmpzIj48L3NjcmlwdD4nLiJcbiI7CgkkdGlwZF9qcyAuPSAnPHNjcmlw
+dCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPicuIlxuIjsKCSR0aXBkX2pzIC49ICJcdGV2Yl91
+cmwgPSAnJHVybCc7XG4iOwoJJHRpcGRfanMgLj0gIlx0ZXZiXyRzaXplKGV2Yl91cmwpO1xu
+IjsKCSR0aXBkX2pzIC49ICI8L3NjcmlwdD5cbiI7CgoJcmV0dXJuICR0aXBkX2pzOwp9CiI7
+czozOiJtZDUiO3M6MzI6IjQ4MGZmOWZlYWY2MTlhZWU5ZGU3NjI5NjcwZDM0MDM3Ijt9
