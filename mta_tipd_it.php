@@ -56,6 +56,8 @@ p. @<txp:mta_tipd_it size="small" />@
 
 h3. Change Log
 
+v0.1.1 Updated to include JavaScript from tools.tipd.com instead of tipd.com.
+
 v0.1 Initial release.
 
 
@@ -76,7 +78,7 @@ function mta_tipd_it($atts)
 		'size' => 'big'
 	),$atts));
 	
-	$tipd_js .= '<script type="text/javascript" src="http://tipd.com/evbs.js"></script>'."\n";
+	$tipd_js .= '<script type="text/javascript" src="http://tools.tipd.com/evbs.js"></script>'."\n";
 	$tipd_js .= '<script type="text/javascript">'."\n";
 	$tipd_js .= "\tevb_url = '$url';\n";
 	$tipd_js .= "\tevb_$size(evb_url);\n";
